@@ -1,3 +1,4 @@
+// Dummy implementation for Client demo
 const isLoggedIn = (req, res, next) => {
     if(!req.headers.id) {
         return next({
@@ -9,6 +10,7 @@ const isLoggedIn = (req, res, next) => {
 
 }
 
+// Dummy implementation for Client demo
 const isItMe = (req, res, next) => {
     if(req.headers.id !== req.params.id) {
         return next({
